@@ -16,6 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
     public bool grounded { get; private set; }
     public bool jumping { get; private set; }
+    public bool running => Mathf.Abs(velocity.x) > 0.25f || Mathf.Abs(inputAxis) > 0.25f;
+    public bool sliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
+    public bool falling => velocity.y < 0f && !grounded;
+
 
     private void Awake()
     {
@@ -42,7 +46,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void HorizontalMovement()
     {
-        velocity.x = inputAxis * moveSpeed;
+        // accelerate / decelerate
+        inputAxis = Input.GetAxis("Horizontal");
+        velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
+
+        // flip sprite to face direction
+        if (velocity.x > 0f)
+        {
+            transform.eulerAngles = Vector3.zero;
+        }
+        else if (velocity.x < 0f)
+        {
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
     }
 
     private void CheckGrounded()
