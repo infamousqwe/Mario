@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class BlockHit : MonoBehaviour
 {
+    public static event Action OnCoinCollected;
+
     public GameObject item;
     public Sprite emptyBlock;
     public int maxHits = -1;
@@ -12,7 +15,8 @@ public class BlockHit : MonoBehaviour
     {
         if (!animating && maxHits != 0 && collision.gameObject.CompareTag("Player"))
         {
-            if (collision.transform.DotTest(transform, Vector2.up)) {
+            if (collision.transform.DotTest(transform, Vector2.up))
+            {
                 Hit();
             }
         }
@@ -25,12 +29,15 @@ public class BlockHit : MonoBehaviour
 
         maxHits--;
 
-        if (maxHits == 0) {
+        if (maxHits == 0)
+        {
             spriteRenderer.sprite = emptyBlock;
         }
 
-        if (item != null) {
+        if (item != null)
+        {
             Instantiate(item, transform.position, Quaternion.identity);
+            OnCoinCollected?.Invoke(); // Trigger the event when a coin is collected
         }
 
         StartCoroutine(Animate());
@@ -66,5 +73,4 @@ public class BlockHit : MonoBehaviour
 
         transform.localPosition = to;
     }
-
 }
