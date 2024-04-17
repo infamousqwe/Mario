@@ -392,10 +392,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6867638925636970600, guid: 4a91856f2efb74d59b70c91337ffe3de, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2117770872}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a91856f2efb74d59b70c91337ffe3de, type: 3}
 --- !u!1001 &45598535
 PrefabInstance:
@@ -819,11 +816,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.1554
+      value: 69.51
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.8223095
+      value: 6.42
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1973,11 +1970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -54.5089
+      value: -54.46
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.84
+      value: 5.18
       objectReference: {fileID: 0}
     - target: {fileID: 6963287154992705727, guid: b25a4b44bfcca4412ad3ae9cbe56f4a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4002,7 +3999,7 @@ PrefabInstance:
     - target: {fileID: 1916550543567596657, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 6942444539300600920, guid: 0442c7845e41fac45bf5e4e96338f2b6, type: 3}
+      objectReference: {fileID: 8330471682669336846, guid: d216797e74bd441efa3117bb87e49371, type: 3}
     - target: {fileID: 3721362970641615652, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (8)
@@ -4470,7 +4467,7 @@ PrefabInstance:
     - target: {fileID: 1916550543567596657, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 4258913245420098776, guid: c11ac5edcd44929408920bf4f10725b4, type: 3}
+      objectReference: {fileID: 8330471682669336846, guid: d216797e74bd441efa3117bb87e49371, type: 3}
     - target: {fileID: 3721362970641615652, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (6)
@@ -5486,7 +5483,7 @@ PrefabInstance:
     - target: {fileID: 1916550543567596657, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 6942444539300600920, guid: 0442c7845e41fac45bf5e4e96338f2b6, type: 3}
+      objectReference: {fileID: 8330471682669336846, guid: d216797e74bd441efa3117bb87e49371, type: 3}
     - target: {fileID: 3721362970641615652, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: m_Name
       value: MysteryBlock
@@ -8859,6 +8856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898a1b70c3122174bba0df090c9d0855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinText: {fileID: 0}
 --- !u!4 &1908440958
 Transform:
   m_ObjectHideFlags: 0
@@ -9146,7 +9144,7 @@ PrefabInstance:
     - target: {fileID: 1916550543567596657, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 4258913245420098776, guid: c11ac5edcd44929408920bf4f10725b4, type: 3}
+      objectReference: {fileID: 8330471682669336846, guid: d216797e74bd441efa3117bb87e49371, type: 3}
     - target: {fileID: 3721362970641615652, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (4)
@@ -9639,46 +9637,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7000243497507859566, guid: a1e258897c3fd4e668f346d41f47a298, type: 3}
   m_PrefabInstance: {fileID: 5769925817480147703}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2117770869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6867638925636970600, guid: 4a91856f2efb74d59b70c91337ffe3de, type: 3}
-  m_PrefabInstance: {fileID: 42481225}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &2117770872
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117770869}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
 --- !u!1001 &2141684603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9690,7 +9648,7 @@ PrefabInstance:
     - target: {fileID: 1916550543567596657, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 6942444539300600920, guid: 0442c7845e41fac45bf5e4e96338f2b6, type: 3}
+      objectReference: {fileID: 8330471682669336846, guid: d216797e74bd441efa3117bb87e49371, type: 3}
     - target: {fileID: 3721362970641615652, guid: 8d040493ebecc48afb87786e79f86db6, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (2)
